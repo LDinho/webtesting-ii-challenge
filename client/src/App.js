@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Display from './components/Display/Display';
+import Dashboard from './components/Dashboard/Dashboard';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Testing
-        </p>
+class App extends Component {
 
-      </header>
-    </div>
-  );
+  render() {
+
+    return (
+
+      <main className="main-display">
+        <Dashboard />
+        <Display />
+      </main>
+    );
+  }
+
 }
 
 export default App;
