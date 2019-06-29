@@ -4,7 +4,14 @@ const Button = (props) => {
 
   return (
 
-    <button data-testid="button">{props.statName}</button>
+    <button data-testid={props.statName}
+            onClick={() => {
+              return props.updateStat(props.statName)
+            }}
+    >
+      {props.statName}
+
+    </button>
   )
 
 };

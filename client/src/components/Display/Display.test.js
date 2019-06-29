@@ -24,7 +24,7 @@ it("should render balls stats", () => {
 
 it("should render strikes stats", () => {
   const { getByTestId } = render(<Display {...dataStats} />);
-  const strikes = getByTestId("strikes");
+  const strikes = getByTestId("strikes-stat");
 
   expect(getNodeText(strikes)).toBe(dataStats.strikes + "");
 });

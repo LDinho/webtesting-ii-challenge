@@ -9,11 +9,11 @@ const Display = (props) => {
 
       <div className="stats">
         <div>Balls: </div>
-        <div className="batter-stats">{props.balls}</div>
+        <div data-testid="balls-stat">{props.balls}</div>
       </div>
       <div className="stats">
         <div>Strikes: </div>
-        <div data-testid="strikes">{props.strikes}</div>
+        <div data-testid="strikes-stat">{props.strikes}</div>
       </div>
     </div>
   )
