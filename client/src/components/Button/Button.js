@@ -1,10 +1,10 @@
 import React from "react";
 
-const Button = () => {
+const Button = (props) => {
 
   return (
 
-    <button>record info</button>
+    <button data-testid="button">{props.statName}</button>
   )
 
 };

@@ -9,7 +9,12 @@ const Dashboard = () => {
     <section>
       <h2>Dashboard</h2>
 
-      <Button />
+      <div data-testid="dashboard">
+        <Button statName="Strike" />
+        <Button statName="Ball" />
+        <Button statName="Hit" />
+        <Button statName="Foul" />
+      </div>
 
     </section>
   )

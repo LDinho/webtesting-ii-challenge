@@ -11,8 +11,8 @@ const dataStats = {
 };
 
 it("should render successfully", () => {
-  const { getByText } = render(<Display />);
-  const display = getByText(/display/i);
+  render(<Display />);
+
 });
 
 it("should render balls stats", () => {
